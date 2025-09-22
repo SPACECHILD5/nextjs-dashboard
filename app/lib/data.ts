@@ -16,8 +16,8 @@ export async function fetchRevenue() {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
 
-    console.log("Fetching revenue data..."); //Chpt8. Static and Dynamic Rendering
-    await new Promise((resolve) => setTimeout(resolve, 3000)); //Chpt8. Static and Dynamic Rendering
+    // console.log("Fetching revenue data..."); //Chpt8. Static and Dynamic Rendering
+    // await new Promise((resolve) => setTimeout(resolve, 3000)); //Chpt8. Static and Dynamic Rendering
 
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
 
